@@ -1,0 +1,32 @@
+# The `preamble` is inserted at the very beginning of the output.
+# It should describe what the following text means.
+# If this key is omitted, then the following default value is used:
+#   This software product incorporates the following licensed components:
+preamble: 'This is a custom preamble. Somewhere in here, you should say something along the lines of what the default preamble says.'
+
+# `components` maps License IDs from `licenses` to copyright strings for individual components.
+# One string should be used for each licensed component.
+# You may wish to include a URL at the end of each copyright string.
+components:
+  mit:
+    - Yams, copyright © 2016 JP Simard
+    #- AnotherComponentUnderMITLicense, copyright © 20xx somebody
+  bsd-2-clause:
+    - PathKit, copyright © 2014 Kyle Fuller. All rights reserved.
+    #- AnotherComponentUnderBSD2Clause, copyright © 20xx somebody
+  apache2-swift:
+    - Swift Argument Parser from Apple Inc., https://github.com/apple/swift-argument-parser
+    #- AnotherComponentUnderApache2Swift, copyright © 20xx somebody
+
+# `licenses` defines License IDs, and assigns a natural-language name and full-text filename for each.
+# If omitted, `filename` defaults to `<license-id>.txt`.
+licenses:
+  mit:
+    name: MIT License
+    #filename: mit.txt
+  bsd-2-clause:
+    name: BSD 2-Clause License
+    #filename: bsd-2-clause.txt
+  apache2-swift:
+    name: Apache License 2.0 with Runtime Library Exception
+    #filename: apache2-swift.txt
